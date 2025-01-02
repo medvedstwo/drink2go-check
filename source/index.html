@@ -69,8 +69,8 @@
     </header>
     <main>
       <h1 class="visually-hydden">Drink2Go — интернет-магазин по продаже кофейных напитков.</h1>
-      <section class="hero">
-        <div class="slider" data-test="hero">
+      <section class="hero" data-test="hero">
+        <div class="slider">
           <button class="button slider__button slider-button-prev" type="button">
             <span class="visually-hidden">Назад.</span>
           </button>
@@ -88,9 +88,9 @@
                   </picture>
                 </div>
                 <div class="slider__description">
-                  <h2>Новинка!</h2>
-                  <h3>Декаф Флэт Уайт</h3>
-                  <p>Свежесваренный кофе без кофеина из Эфиопии
+                  <h2 class="badge slider__badge">Новинка!</h2>
+                  <h3 class="title slider__subtitle">Декаф Флэт Уайт</h3>
+                  <p class="slider__description-text">Свежесваренный кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком — то, что нужно
                     для расслабления после тяжёлого рабочего дня</p>
                 </div>
@@ -114,9 +114,9 @@
                   </picture>
                 </div>
                 <div class="slider__description">
-                  <h2>Новинка!</h2>
-                  <h3>Лавандовый Латте</h3>
-                    <p>Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <h2 class="badge slider__badge">Новинка!</h2>
+                  <h3 class="title slider__subtitle">Лавандовый Латте</h3>
+                  <p class="slider__description-text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
                 </div>
                 <div class="slider__order">
                   <div class="price">
@@ -138,9 +138,9 @@
                   </picture>
                 </div>
                 <div class="slider__description">
-                  <h2>Новинка!</h2>
-                  <h3>Тройной Эспрессо</h3>
-                  <p>Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <h2 class="badge slider__badge">Новинка!</h2>
+                  <h3 class="title slider__subtitle">Тройной Эспрессо</h3>
+                  <p class="slider__description-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
                 </div>
                 <div class="slider__order">
                   <div class="price">
@@ -172,6 +172,38 @@
           <button class="button slider__button slider-button-next" type="button">
             <span class="visually-hidden">Вперед.</span>
           </button>
+        </div>
+      </section>
+      <section class="features" data-test="features">
+        <div class="wrapper">
+          <h2 class="badge features__badge">Преимущества</h2>
+          <p class="title features__subtitle">Главные причины выбрать Drink2Go</p>
+          <ul class="features__list">
+            <li class="features__item features__item--speed">
+              <div class="features__item-wrapper">
+                <h3 class="features__item-title">Скорость</h3>
+                <p class="features__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
+              </div>
+            </li>
+            <li class="features__item features__item--fit">
+              <div class="features__item-wrapper">
+                <h3 class="features__item-title">Удобство</h3>
+                <p class="features__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
+              </div>
+            </li>
+            <li class="features__item features__item--energy">
+              <div class="features__item-wrapper">
+                <h3 class="features__item-title">Бодрость</h3>
+                <p class="features__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+              </div>
+            </li>
+            <li class="features__item features__item--eco">
+              <div class="features__item-wrapper">
+                <h3 class="features__item-title">Экологичность</h3>
+                <p class="features__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
