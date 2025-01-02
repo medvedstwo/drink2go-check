@@ -9,20 +9,20 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header" data-test="header">
       <div class="header__wrapper">
         <a class="header__logo-link" href="index.html">
           <picture>
             <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo/drink2go-desktop.svg" width="170" height="36">
             <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo/drink2go-tablet.svg" width="82" height="36">
             <source type="image/svg+xml" media="(min-width:320px)" srcset="images/logo/drink2go-mobile.svg" width="32" height="36">
-            <img class="header__logo-img" src="images/logo/drink2go-mobile.svg" alt="Drink2Go" width="32" height="36">
+            <img class="header__logo-img" src="images/logo/drink2go-mobile.svg" alt="Drink2Go." width="32" height="36">
           </picture>
           <p>Интернет-магазин кофейных напитков</p>
         </a>
         <nav class="navigation">
           <div class="navigation__main">
-            <button class="button navigation__button navigation__button--closed" type="button">
+            <button class="button navigation__button navigation__button--closed js-toggle-button" type="button">
               <span class="visually-hydden">Открыть меню.</span>
             </button>
             <ul class="navigation__list">
@@ -68,7 +68,63 @@
       </div>
     </header>
     <main>
-      <h1>Страница для старта</h1>
+      <h1 class="visually-hydden">Drink2Go — интернет-магазин по продаже кофейных напитков.</h1>
+      <section class="hero">
+        <div class="slider" data-test="hero">
+          <button class="button slider__button slider-button-prev" type="button">
+            <span class="visually-hidden">Назад.</span>
+          </button>
+          <div class="slider__content">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <div class="slider__img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero/slider/product-1/slider-product-1-desktop@1x.webp 1x, images/hero/slider/product-1/slider-product-1-desktop@2x.webp 2x" width="600" height="600">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/hero/slider/product-1/slider-product-1-tablet@1x.webp 1x, images/hero/slider/product-1/slider-product-1-tablet@2x.webp 2x" width="476" height="476">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="images/hero/slider/product-1/slider-product-1-mobile@1x.webp 1x, images/hero/slider/product-1/slider-product-1-mobile@2x.webp 2x" width="280" height="280">
+                    <source type="image/png" media="(min-width: 1440px)" srcset="images/hero/slider/product-1/slider-product-1-desktop@1x.png 1x, images/hero/slider/product-1/slider-product-1-desktop@2x.png 2x" width="600" height="600">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/hero/slider/product-1/slider-product-1-tablet@1x.png 1x, images/hero/slider/product-1/slider-product-1-tablet@2x.png 2x" width="476" height="476">
+                    <img class="slider__img slider__img--before" src="images/hero/slider/product-1/slider-product-1-mobile@1x.png" srcset="images/hero/slider/product-1/slider-product-1-mobile@2x.png 2x" width="280" height="280" alt="Толстый котик.">
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <h2>Новинка!</h2>
+                  <h3>Свежесваренный кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком — то, что нужно
+                    для расслабления после тяжёлого рабочего дня</h3>
+                </div>
+                <div class="slider__order">
+                  <div class="price">
+                    <p class="price__element price__element--old">295</p>
+                    <p class="price__element price__element--new">225₽</p>
+                  </div>
+                  <button class="button button--primary" type="button">Заказать</button>
+                </div>
+              </li>
+            </ul>
+            <ol class="slider__pagination slider-pagination">
+              <li class="slider-pagination__item">
+                <a class="slider-pagination__link slider-pagination__link--current" href="#">
+                  <span class="visually-hidden">Слайд 1.</span>
+                </a>
+              </li>
+              <li class="slider-pagination__item">
+                <a class="slider-pagination__link slider-pagination__link--current" href="#">
+                  <span class="visually-hidden">Слайд 2.</span>
+                </a>
+              </li>
+              <li class="slider-pagination__item">
+                <a class="slider-pagination__link slider-pagination__link--current" href="#">
+                  <span class="visually-hidden">Слайд 3.</span>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <button class="button slider__button slider-button-next" type="button">
+            <span class="visually-hidden">Вперед.</span>
+          </button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
