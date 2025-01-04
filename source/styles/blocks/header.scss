@@ -1,5 +1,15 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+
+}
+
+.header__wrapper {
+  @include flex(space-between, center);
+  padding-left: 20px;
+  width: $vp-mobile;
+}
+
+.header__logo-link {
+  p {
+    display: none;
+  }
 }

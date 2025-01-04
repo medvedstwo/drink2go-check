@@ -1,1 +1,37 @@
 /* здесь используйте глобальные переменные */
+
+// base colors
+
+$color-white: #ffffff;
+$color-grey: #bdbdbd;
+$color-black: #333333;
+$color-primary: #7859cf;
+$color-secondary: #f0ebff;
+$color-primary-opacity: rgba(120, 89, 207, 0.25);
+$color-primary-lighter: #9070ec;
+$color-primary-darker: #593cac;
+$color-loght-grey: #e2e2e2;
+
+// background
+
+$bg-lightest-grey: #f8f8f8;
+$bg-flat-white: #f3ebe1;
+$bg-lavender-latte: #eae6fc;
+$bg-espresso: #e5e6e8;
+
+// viewport and wrapper
+
+$vp-mobile: 320px;
+$vp-tablet: 768px;
+$vp-desktop: 1440px;
+$wrapper-mobile: 280px;
+$wrapper-tablet: 728px;
+$wrapper-desktop: 1360px;
+
+// fonts
+
+$font-montserrat-regular: "Montserrat Regular", sans-serif;
+$font-montserrat-medium: "Montserrat Medium", sans-serif;
+$font-montserrat-semibold: "Montserrat SemiBold", sans-serif;
+$font-montserrat-bold: "Montserrat Bold", sans-serif;
+$font-montserrat-extrabold: "Montserrat ExtraBold", sans-serif;

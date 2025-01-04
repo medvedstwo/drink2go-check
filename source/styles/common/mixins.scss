@@ -1,0 +1,67 @@
+// title
+
+@mixin title-primary-mobile($font-family: $font-montserrat-bold, $color: $color-black) {
+  font-family: $font-family;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  color: $color;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+@mixin title-secondary-mobile($font-family: $font-montserrat-bold, $color: $color-black) {
+  font-family: $font-family;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $color;
+  text-align: center;
+}
+
+@mixin title-tertiary-mobile($font-family: $font-montserrat-bold, $color: $color-black) {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: $color;
+  text-align: left;
+}
+
+@mixin title-quaternary-mobile($font-family: $font-montserrat-bold, $color: $color-primary) {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+
+// text
+
+@mixin text-main-mobile($font-family: $font-montserrat-regular, $color: $color-black) {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color;
+  text-align: center;
+}
+
+// flex ang grid
+
+@mixin flex($justify-content, $align-items, $flex-direction: row) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+// button
+
+@mixin button {
+  @include flex(center, center);
+  background-color: $color-white;
+  border: none;
+}
