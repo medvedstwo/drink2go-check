@@ -1,5 +1,16 @@
 .hero {
   @include flex(center, center);
   width: 100vw;
-  background-color: $bg-flat-white;
+
+  &:has(.slider__item--flat-white.slider__item--current) {
+    background-color: $bg-flat-white;
+  }
+
+  &:has(.slider__item--lavender-latte.slider__item--current) {
+    background-color: $bg-lavender-latte;
+  }
+
+  &:has(.slider__item--lavender-latte.slider__item--current) {
+    background-color: $bg-lavender-latte;
+  }
 }
