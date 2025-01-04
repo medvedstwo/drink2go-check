@@ -1,0 +1,10 @@
+.catalog {
+  @include flex(center, center);
+  padding: 50px 20px 60px;
+  background-color: $bg-lightest-grey;
+}
+
+.catalog__subtitle {
+  @include title-secondary-mobile;
+  margin-bottom: 20px;
+}
