@@ -1,0 +1,14 @@
+.button {
+  @include button;
+
+  &--primary {
+    font-family: $font-primary-regular;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-white;
+    padding: 8px 20px;
+    background-color: $color-primary;
+    border-radius: 4px;
+  }
+}

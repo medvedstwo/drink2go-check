@@ -1,6 +1,6 @@
 // title
 
-@mixin title-primary-mobile($font-family: $font-montserrat-bold, $color: $color-black) {
+@mixin title-primary-mobile($font-family: $font-primary-bold, $color: $color-black) {
   font-family: $font-family;
   font-size: 36px;
   line-height: 48px;
@@ -8,27 +8,33 @@
   color: $color;
   text-align: center;
   letter-spacing: 0.02em;
+  padding: 0;
+  margin: 0;
 }
 
-@mixin title-secondary-mobile($font-family: $font-montserrat-bold, $color: $color-black) {
+@mixin title-secondary-mobile($font-family: $font-primary-bold, $color: $color-black) {
   font-family: $font-family;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
   color: $color;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-@mixin title-tertiary-mobile($font-family: $font-montserrat-bold, $color: $color-black) {
+@mixin title-tertiary-mobile($font-family: $font-primary-bold, $color: $color-black) {
   font-family: $font-family;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   color: $color;
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
-@mixin title-quaternary-mobile($font-family: $font-montserrat-bold, $color: $color-primary) {
+@mixin title-quaternary-mobile($font-family: $font-primary-bold, $color: $color-primary) {
   font-family: $font-family;
   font-size: 14px;
   line-height: 20px;
@@ -36,17 +42,43 @@
   color: $color;
   text-align: left;
   letter-spacing: 0.02em;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin badge($font-family: $font-primary-bold, $color: $color-primary) {
+  font-family: $font-family;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0;
+  margin: 0;
 }
 
 // text
 
-@mixin text-main-mobile($font-family: $font-montserrat-regular, $color: $color-black) {
+@mixin text-main-mobile($font-family: $font-primary-regular, $color: $color-black) {
   font-family: $font-family;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: $color;
   text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin price($font-family: $font-primary-semibold, $color: $color-black) {
+  font-family: $font-family;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $color;
+  padding: 0;
+  margin: 0;
 }
 
 // flex ang grid
@@ -62,6 +94,7 @@
 
 @mixin button {
   @include flex(center, center);
-  background-color: $color-white;
+  padding: 0;
+  background-color: transparent;
   border: none;
 }

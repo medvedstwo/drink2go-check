@@ -1,0 +1,5 @@
+.hero {
+  @include flex(center, center);
+  width: 100vw;
+  background-color: $bg-flat-white;
+}

@@ -6,6 +6,12 @@
 @import "./common/fonts.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
 @import "./blocks/header.scss";
 @import "./blocks/page.scss";
 @import "./blocks/navigation.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/badge.scss";
+@import "./blocks/slider-pagination.scss";
+@import "./blocks/price.scss";
