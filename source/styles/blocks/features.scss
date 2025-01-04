@@ -1,0 +1,82 @@
+.features {
+  @include flex(center, center);
+  padding: 50px 20px 60px;
+}
+
+.features__badge {
+  margin-bottom: 4px;
+}
+
+.features__subtitle {
+  @include title-secondary-mobile;
+  margin-bottom: 36px;
+}
+
+.features__list {
+  @include flex(center, center, column);
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.features__item-wrapper {
+  @include flex(center, center, column);
+  position: relative;
+
+  &--speed {
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 52px;
+      height: 56px;
+      margin-bottom: 10px;
+      background-image: url("../../icons/features-energy.svg");
+    }
+  }
+
+  &--fit {
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 52px;
+      height: 56px;
+      margin-bottom: 10px;
+      background-image: url("../../icons/features-fit.svg");
+    }
+  }
+
+  &--energy {
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 52px;
+      height: 56px;
+      margin-bottom: 10px;
+      background-image: url("../../icons/features-energy.svg");
+    }
+  }
+
+  &--eco {
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 52px;
+      height: 56px;
+      margin-bottom: 10px;
+      background-image: url("../../icons/features-eco.svg");
+    }
+  }
+}
+
+.features__item-title {
+  @include title-tertiary-mobile;
+}
+
+.features__item-description {
+  margin: 0;
+}
