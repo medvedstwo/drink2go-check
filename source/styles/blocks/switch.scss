@@ -23,6 +23,16 @@
       }
     }
   }
+
+  &:disabled {
+    & + .switch__element {
+      opacity: 0.5;
+    }
+
+    & ~ .switch__description {
+      opacity: 0.5;
+    }
+  }
 }
 
 .switch__element {
