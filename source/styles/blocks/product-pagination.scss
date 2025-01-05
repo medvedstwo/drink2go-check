@@ -1,0 +1,38 @@
+.product-pagination {
+  @include flex(flex-start, center);
+  gap: 20px;
+}
+
+.product-pagination__link {
+  @include flex(center, center);
+  font-family: $font-primary-regular;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-primary;
+  text-decoration: none;
+  padding: 8px;
+  min-height: 40px;
+  aspect-ratio: 1/1;
+  background-color: $color-white;
+  border-radius: 4px;
+
+  &--current {
+    font-family: $font-primary-semibold;
+    font-weight: 600;
+    color: $color-black;
+    background-color: transparent;
+  }
+}
+
+.product-pagination__description {
+  display: none;
+}
+
+.product-pagination__list {
+  @include flex(flex-start, center);
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
