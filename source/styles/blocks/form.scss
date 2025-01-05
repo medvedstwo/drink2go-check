@@ -25,41 +25,42 @@
   label {
     @include flex(flex-start, center);
     gap: 10px;
+    cursor: pointer;
+  }
+}
+
+.form__item-input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+
+  &:checked {
+    border: 2px solid $color-primary;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      background-color: $color-primary;
+      border-radius: 50%;
+    }
   }
 
-  input {
-    -webkit-appearance: none;
-    appearance: none;
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #bdbdbd;
-    border-radius: 50%;
+  &:disabled {
+    opacity: 0.5;
 
-    &:checked {
-      border: 2px solid $color-primary;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 16px;
-        height: 16px;
-        background-color: $color-primary;
-        border-radius: 50%;
-      }
-    }
-
-    &:disabled {
+    & + span {
       opacity: 0.5;
-
-      &+span {
-        opacity: 0.5;
-      }
     }
   }
 }
