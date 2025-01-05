@@ -1,0 +1,39 @@
+.footer-nav__inner {
+  @include flex(flex-start, flex-start, column);
+  position: relative;
+  gap: 12px;
+  padding: 20px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    right: -100vw;
+    bottom: 0;
+    height: 1px;
+    background-color: $color-secondary;
+  }
+}
+
+.footer-nav__title {
+  @include title-quaternary-mobile;
+}
+
+.footer-nav__list {
+  @include flex(flex-start, flex-start, column);
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-nav__link {
+  font-family: $font-primary-medium;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $color-black;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+}

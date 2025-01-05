@@ -1,0 +1,30 @@
+.footer {
+  @include flex(center, flex-start,column);
+  padding: 0 20px;
+}
+
+.footer__wrapper {
+  width: $wrapper-mobile;
+}
+
+.footer__inner {
+  @include flex(space-between, center);
+  position: relative;
+  padding: 22px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    right: -100vw;
+    bottom: 0;
+    height: 1px;
+    background-color: $color-secondary;
+  }
+}
+
+.footer__logo-link {
+  span {
+    display: none;
+  }
+}
