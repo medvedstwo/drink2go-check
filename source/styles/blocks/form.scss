@@ -35,10 +35,12 @@
     margin: 0;
     width: 24px;
     height: 24px;
-    border: 2px solid $color-primary;
+    border: 2px solid #bdbdbd;
     border-radius: 50%;
 
     &:checked {
+      border: 2px solid $color-primary;
+
       &::after {
         content: "";
         position: absolute;
@@ -49,6 +51,14 @@
         height: 16px;
         background-color: $color-primary;
         border-radius: 50%;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.5;
+
+      &+span {
+        opacity: 0.5;
       }
     }
   }
