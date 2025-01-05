@@ -28,6 +28,8 @@
 }
 
 .footer-nav__link {
+  display: inline-block;
+  position: relative;
   font-family: $font-primary-medium;
   font-size: 12px;
   line-height: 16px;
@@ -36,4 +38,37 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   text-transform: uppercase;
+  gap: 2px;
+
+  span {
+    display: inline-block;
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  &--address {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 13px;
+      height: 16px;
+      background-image: url("../../icons/address.svg");
+      background-size: 13px 16px;
+    }
+  }
+
+  &--phone {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 13px;
+      height: 16px;
+      background-image: url("../../icons/phone.svg");
+      background-size: 13px 16px;
+    }
+  }
 }

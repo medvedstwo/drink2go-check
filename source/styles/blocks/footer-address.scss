@@ -1,0 +1,13 @@
+.footer-address {
+  text-align: left;
+
+  ul {
+    gap: 16px;
+  }
+
+  .footer-nav__link {
+    @include text-main-mobile;
+    font-style: normal;
+    text-transform: none;
+  }
+}
