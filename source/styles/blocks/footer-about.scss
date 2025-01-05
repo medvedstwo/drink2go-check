@@ -1,0 +1,22 @@
+.footer-about {
+  padding: 30px 0 20px;
+}
+
+.footer-about__description {
+  @include flex(center, center);
+  font-family: $font-primary-regular;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-grey;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-about__link {
+  @include flex(flex-end, center);
+  color: $color-grey;
+  text-decoration: none;
+  margin-left: 8px;
+  gap: 4px;
+}
