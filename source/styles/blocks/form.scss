@@ -1,0 +1,55 @@
+.form__title {
+  @include price;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form__inner {
+  margin-bottom: 30px;
+}
+
+.form__list {
+  @include flex(center, flex-start, column);
+  gap: 20px;
+  font-style: 16px;
+  line-height: 24px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.form__item {
+  label {
+    @include flex(flex-start, center);
+    gap: 10px;
+  }
+
+  input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+
+    &:checked {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        background-color: $color-primary;
+        border-radius: 50%;
+      }
+    }
+  }
+}
