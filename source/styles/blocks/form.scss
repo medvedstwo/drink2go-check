@@ -64,3 +64,12 @@
     }
   }
 }
+
+.form__inner-button {
+  @include flex(flex-start, center, column);
+  gap: 20px;
+
+  button {
+    width: 100%;
+  }
+}
