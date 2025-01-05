@@ -1,0 +1,24 @@
+.select {
+  @include flex(space-between, center);
+  margin-bottom: 16px;
+}
+
+.select__title {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.select__select {
+  font-family: $font-primary-semibold;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $color-primary;
+  text-transform: lowercase;
+  padding: 4px 0 4px 10px;
+  max-width: 165px;
+  background-color: transparent;
+  border: none;
+}
+
