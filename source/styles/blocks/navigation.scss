@@ -10,6 +10,10 @@
     order: 0;
     margin-right: 60px;
   }
+
+  @media (min-width: $vp-desktop) {
+    margin-right: 162px;
+  }
 }
 
 .navigation__button {
@@ -61,6 +65,7 @@
 }
 
 .navigation__user-icon {
+  @include flex(center, center);
   width: 16px;
   height: 16px;
 
@@ -71,6 +76,13 @@
 }
 
 .navigation__user-link {
+  font-family: $font-primary-medium;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   padding: 22px;
 
   span {
@@ -79,5 +91,14 @@
 
   @media (min-width: $vp-tablet) {
     padding: 32px 22px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    @include flex(flex-start, center);
+    gap: 8px;
+
+    span {
+      display: block;
+    }
   }
 }

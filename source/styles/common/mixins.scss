@@ -90,6 +90,10 @@
   line-height: 32px;
 }
 
+@mixin text-main-desktop {
+  text-align: left;
+}
+
 @mixin price($font-family: $font-primary-semibold, $color: $color-black) {
   font-family: $font-family;
   font-size: 20px;

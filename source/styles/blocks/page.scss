@@ -14,6 +14,10 @@
   @media (min-width: $vp-tablet) {
     @include text-main-tablet;
   }
+
+  @media (min-width: $vp-desktop) {
+    @include text-main-desktop;
+  }
 }
 
 .page__main {
