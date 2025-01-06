@@ -4,13 +4,28 @@
 
   &:has(.slider__item--flat-white.slider__item--current) {
     background-color: $bg-flat-white;
+
+    @media (min-width: $vp-tablet) {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, $bg-flat-white 77%, $color-white 77%);
+    }
   }
 
   &:has(.slider__item--lavender-latte.slider__item--current) {
     background-color: $bg-lavender-latte;
+
+    @media (min-width: $vp-tablet) {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, $bg-lavender-latte 77%, $color-white 77%);
+    }
   }
 
   &:has(.slider__item--triple-espresso.slider__item--current) {
-    background-color: $bg-lavender-latte;
+    background-color: $bg-espresso;
+
+    @media (min-width: $vp-tablet) {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, $bg-espresso 77%, $color-white 77%);
+    }
   }
 }

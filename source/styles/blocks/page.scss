@@ -10,6 +10,10 @@
   padding: 0;
   margin: 0 auto;
   min-height: 100%;
+
+  @media (min-width: $vp-tablet) {
+    @include text-main-tablet;
+  }
 }
 
 .page__main {

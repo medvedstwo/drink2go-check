@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+@mixin title-primary-tablet {
+  font-size: 56px;
+  line-height: 80px;
+}
+
 @mixin title-secondary-mobile($font-family: $font-primary-bold, $color: $color-black) {
   font-family: $font-family;
   font-size: 24px;
@@ -54,8 +59,6 @@
   color: $color;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding: 0;
-  margin: 0;
 }
 
 // text
@@ -69,6 +72,11 @@
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+@mixin text-main-tablet {
+  font-size: 20px;
+  line-height: 32px;
 }
 
 @mixin price($font-family: $font-primary-semibold, $color: $color-black) {
