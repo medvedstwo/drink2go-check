@@ -41,6 +41,10 @@
   }
 }
 
+.navigation__item {
+  display: flex;
+}
+
 .navigation__link {
   font-family: $font-primary-medium;
   font-size: 12px;

@@ -1,13 +1,14 @@
 .footer {
-  @include flex(center, flex-start,column);
-  padding: 20px 20px 30px;
+  @include flex(center, center, column);
 
   @media (min-width: $vp-tablet) {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }
 
 .footer__wrapper {
+  @include flex(space-between, center);
+  padding: 20px 0;
   width: $wrapper-mobile;
 
   @media (min-width: $vp-tablet) {
@@ -16,18 +17,18 @@
 }
 
 .footer__inner {
-  @include flex(space-between, center);
+  @include flex(center, center);
   position: relative;
+  width: 100%;
 
   &::after {
     content: "";
     position: absolute;
-    left: -100vw;
-    right: -100vw;
+    left: 0;
+    right: 0;
     bottom: 0;
     height: 1px;
     background-color: $color-secondary;
-
   }
 
   @media (min-width: $vp-tablet) {

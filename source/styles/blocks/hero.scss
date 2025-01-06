@@ -1,6 +1,6 @@
 .hero {
   @include flex(center, center);
-  width: 100vw;
+  width: 100%;
 
   &:has(.slider__item--flat-white.slider__item--current) {
     background-color: $bg-flat-white;

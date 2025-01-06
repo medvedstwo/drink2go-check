@@ -1,3 +1,8 @@
+.footer-about {
+  width: $wrapper-mobile;
+  padding: 20px;
+}
+
 .footer-about__description {
   @include flex(center, center);
   font-family: $font-primary-regular;

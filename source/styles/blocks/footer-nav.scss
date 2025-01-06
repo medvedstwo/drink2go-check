@@ -7,16 +7,13 @@
 }
 
 .footer-nav__inner {
-  @include flex(flex-start, flex-start, column);
   position: relative;
-  gap: 12px;
-  padding: 20px 0;
 
   &::after {
     content: "";
     position: absolute;
-    left: -100vw;
-    right: -100vw;
+    left: 0;
+    right: 0;
     bottom: 0;
     height: 1px;
     background-color: $color-secondary;
@@ -30,6 +27,17 @@
     &::after {
       content: none;
     }
+  }
+}
+
+.footer-nav__wrapper {
+  @include flex(flex-start, flex-start, column);
+  gap: 12px;
+  padding: 20px;
+  width: 100%;
+
+  @media (min-width: $vp-tablet) {
+    padding: 0;
   }
 }
 
