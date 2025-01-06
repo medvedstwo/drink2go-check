@@ -1,6 +1,10 @@
 .product-pagination {
   @include flex(flex-start, center);
   gap: 20px;
+
+  @media (min-width: $vp-tablet) {
+    justify-content: flex-end;
+  }
 }
 
 .product-pagination__link {
@@ -25,8 +29,25 @@
   }
 }
 
+.product-pagination__link-nav {
+  @media (min-width: $vp-tablet) {
+    padding: 8px 20px;
+    aspect-ratio: 0;
+  }
+}
+
+.product-pagination__icon {
+  @media (min-width: $vp-tablet) {
+    display: none;
+  }
+}
+
 .product-pagination__description {
   display: none;
+
+  @media (min-width: $vp-tablet) {
+    display: inline-block;
+  }
 }
 
 .product-pagination__list {

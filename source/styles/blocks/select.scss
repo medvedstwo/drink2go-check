@@ -1,6 +1,11 @@
 .select {
   @include flex(space-between, center);
   margin-bottom: 16px;
+
+  @media (min-width: $vp-tablet) {
+    justify-content: flex-end;
+    margin-bottom: 26px;
+  }
 }
 
 .select__title {

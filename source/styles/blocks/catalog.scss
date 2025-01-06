@@ -2,9 +2,21 @@
   @include flex(center, center);
   padding: 50px 20px 60px;
   background-color: $bg-lightest-grey;
+
+  @media (min-width: $vp-tablet) {
+    padding: 80px 20px 90px;
+  }
+}
+
+.catalog__badge {
+  margin: 0 0 4px;
 }
 
 .catalog__subtitle {
   @include title-secondary-mobile;
   margin-bottom: 20px;
+
+  @media (min-width: $vp-tablet) {
+    @include title-secondary-tablet;
+  }
 }
