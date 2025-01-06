@@ -1,16 +1,23 @@
 .footer {
   @include flex(center, flex-start,column);
-  padding: 0 20px;
+  padding: 20px 20px 30px;
+
+  @media (min-width: $vp-tablet) {
+    padding: 40px 20px;
+  }
 }
 
 .footer__wrapper {
   width: $wrapper-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $wrapper-tablet;
+  }
 }
 
 .footer__inner {
   @include flex(space-between, center);
   position: relative;
-  padding: 22px 0;
 
   &::after {
     content: "";
@@ -20,6 +27,15 @@
     bottom: 0;
     height: 1px;
     background-color: $color-secondary;
+
+  }
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 30px;
+
+    &::after {
+      content: none;
+    }
   }
 }
 

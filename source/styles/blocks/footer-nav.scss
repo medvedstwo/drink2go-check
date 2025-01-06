@@ -1,3 +1,11 @@
+.footer-nav {
+  @media (min-width: $vp-tablet) {
+    display: grid;
+    grid-template-columns: 223px 222px 223px;
+    gap: 30px;
+  }
+}
+
 .footer-nav__inner {
   @include flex(flex-start, flex-start, column);
   position: relative;
@@ -12,6 +20,16 @@
     bottom: 0;
     height: 1px;
     background-color: $color-secondary;
+
+  }
+
+  @media (min-width: $vp-tablet) {
+    padding: 0;
+    margin-bottom: 30px;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
