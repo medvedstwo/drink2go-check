@@ -1,3 +1,7 @@
 .wrapper {
   width: $wrapper-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $wrapper-tablet;
+  }
 }
