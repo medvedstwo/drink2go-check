@@ -54,6 +54,14 @@
   &--current {
     @include flex(center, center, column);
   }
+
+  @media (min-width: $vp-desktop) {
+    &--current {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      row-gap: 30px;
+    }
+  }
 }
 
 .slider__img {
@@ -63,15 +71,23 @@
     order: 1;
     margin-bottom: 0;
   }
+
+  @media (min-width: $vp-desktop) {
+    order: 0;
+    margin-left: 25px;
+  }
 }
 
 .slider__description {
   @include flex(center, center, column);
   gap: 10px;
-  margin-bottom: 20px;
 
   @media (min-width: $vp-tablet) {
     gap: 0;
+  }
+
+  @media (min-width: $vp-desktop) {
+    align-items: flex-start;
   }
 }
 
@@ -94,18 +110,20 @@
 }
 
 .slider__description-text {
-  margin: 0;
+  margin: 0 0 20px;
 
   br {
     display: none;
   }
 
   @media (min-width: $vp-tablet) {
-    margin-bottom: 20px;
-
     br {
       display: inline-block;
     }
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin: 0 0 40px;
   }
 }
 
