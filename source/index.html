@@ -5,7 +5,9 @@
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="stylesheet" href="vendor/nouislider.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="vendor/nouislider.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
@@ -235,12 +237,16 @@
                 <div class="range__inner">
                   <p class="range__value">
                     <label class="range__label" for="range-input-min"></label>
-                    <input class="range__input" type="text" id="range-input-min" name="range-input-min">
+                    <input class="range__input" type="number" id="range-input-min" name="range-input-min">
                   </p>
-                  <p class="range__description">-</p>
+                  <span class="range__description">
+                    <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.99988H0V-0.00012207H8V1.99988Z" fill="#BDBDBD" />
+                    </svg>
+                  </span>
                   <p class="range__value">
                     <label class="range__label" for="range-input-max"></label>
-                    <input class="range__input" type="text" id="range-input-max" name="range-input-max">
+                    <input class="range__input" type="number" id="range-input-max" name="range-input-max">
                   </p>
                 </div>
               </div>

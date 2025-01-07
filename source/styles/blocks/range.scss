@@ -1,0 +1,272 @@
+.range {
+  width: 100%;
+}
+
+.range__element {
+  margin-bottom: 34px;
+}
+
+.range__inner {
+  @include flex(space-between, center);
+}
+
+.range__input {
+  font-family: $font-primary-medium;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $color-black;
+  text-align: center;
+  padding: 8px 10px;
+  width: 118px;
+  border: 2px solid $color-primary-lighter;
+  border-radius: 4px;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  @media (min-width: $vp-tablet) {
+    width: 87px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: 134px;
+  }
+}
+
+.range__element-target,
+.range__element-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.range__element-target {
+  position: relative;
+}
+
+.range__element-base,
+.range__element-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+ /* Wrapper for all connect elements.
+  */
+
+.range__element-connects {
+  overflow: hidden;
+  z-index: 0;
+}
+
+.range__element-connect,
+.range__element-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform-style: flat;
+}
+
+ /* Offset direction
+  */
+
+.range__element-txt-dir-rtl.range__element-horizontal .range__element-origin {
+  left: 0;
+  right: auto;
+}
+
+ /* Give origins 0 height/width so they don't interfere with clicking the
+  * connect elements.
+  */
+
+.range__element-horizontal .noUi-origin {
+  height: 0;
+}
+
+.range__element-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  outline: 2px solid $color-primary-lighter;
+  border-radius: 50%;
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.range__element-touch-area {
+  height: 100%;
+  width: 100%;
+}
+
+.range__element-state-tap .range__element-connect,
+.range__element-state-tap .range__element-origin {
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.range__element-state-drag * {
+  cursor: inherit;
+}
+
+ /* Slider size and handle placement;
+  */
+
+.range__element-horizontal {
+  height: 2px;
+}
+
+.range__element-horizontal .range__element-handle {
+  width: 24px;
+  height: 24px;
+  right: -17px;
+  top: -10px;
+}
+
+.range__element-txt-dir-rtl.range__element-horizontal .range__element-handle {
+  left: -17px;
+  right: auto;
+}
+
+ /* Styling;
+  * Giving the connect element a border radius causes issues with using transform: scale
+  */
+
+.range__element-target {
+  background: $color-light-grey;
+}
+
+.range__element-connect {
+  background-color: $color-primary-lighter;
+}
+
+ /* Handles and cursors;
+  */
+
+.range__element-draggable {
+  cursor: ew-resize;
+}
+
+.range__element-vertical .range__element-draggable {
+  cursor: ns-resize;
+}
+
+.range__element-active {
+  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+}
+
+ /* Disabled state;
+  */
+
+[disabled] .range__element-connect {
+  background: #B8B8B8;
+}
+
+[disabled].range__element-target,
+[disabled].range__element-handle,
+[disabled] .range__element-handle {
+  cursor: not-allowed;
+}
+
+ /* Base;
+  *
+  */
+
+.range__element-pips,
+.range__element-pips * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.range__element-pips {
+  position: absolute;
+  color: #999;
+}
+
+ /* Values;
+  *
+  */
+
+.range__element-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.range__element-value-sub {
+  color: #ccc;
+  font-size: 10px;
+}
+
+ /* Markings;
+  *
+  */
+
+.range__element-marker {
+  position: absolute;
+  background: #CCC;
+}
+
+.range__element-marker-sub {
+  background: #AAA;
+}
+
+.range__element-marker-large {
+  background: #AAA;
+}
+
+ /* Horizontal layout;
+  *
+  */
+
+.range__element-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.range__element-value-horizontal {
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.range__element-rtl .range__element-value-horizontal {
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+}
+
+.range__element-marker-horizontal.range__element-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px;
+}
+
+.range__element-marker-horizontal.range__element-marker-sub {
+  height: 10px;
+}
+
+.range__element-marker-horizontal.range__element-marker-large {
+  height: 15px;
+}
