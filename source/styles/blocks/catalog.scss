@@ -8,8 +8,21 @@
   }
 }
 
+.catalog__wrapper {
+  @media (min-width: $vp-desktop) {
+    display: grid;
+    grid-template-columns: 318px 1011px;
+    column-gap: 30px;
+  }
+}
+
 .catalog__badge {
   margin: 0 0 4px;
+
+  @media (min-width: $vp-desktop) {
+    text-align: center;
+    grid-column: 1/-1;
+  }
 }
 
 .catalog__subtitle {
@@ -18,5 +31,10 @@
 
   @media (min-width: $vp-tablet) {
     @include title-secondary-tablet;
+  }
+
+  @media (min-width: $vp-desktop) {
+    text-align: center;
+    grid-column: 1/-1;
   }
 }

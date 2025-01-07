@@ -5,6 +5,11 @@
       grid-template-columns: 223px 222px 223px;
       gap: 40px 30px;
     }
+
+    @media (min-width: $vp-desktop) {
+      @include flex(flex-start, flex-start, column);
+      gap: 30px;
+    }
   }
 }
 
