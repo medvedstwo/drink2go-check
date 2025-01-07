@@ -4,4 +4,8 @@
   @media (min-width: $vp-tablet) {
     width: $wrapper-tablet;
   }
+
+  @media (min-width: $vp-desktop) {
+    width: $wrapper-desktop;
+  }
 }
