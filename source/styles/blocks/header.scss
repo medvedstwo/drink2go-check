@@ -1,7 +1,7 @@
 .header__wrapper {
   @include flex(space-between, center);
-  // padding: 0 0 0 20px;
-  width: $wrapper-mobile;
+  width: $vp-mobile;
+  padding: 0 0 0 20px;
 
   @media (min-width: $vp-tablet) {
     padding: 0 20px;
