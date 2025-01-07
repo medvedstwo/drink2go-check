@@ -4,6 +4,11 @@
     grid-template-columns: 223px 222px 223px;
     gap: 30px;
   }
+
+  @media (min-width: $vp-desktop) {
+    grid-template-columns: 317px 318px 317px;
+    padding-top: 9px;
+  }
 }
 
 .footer-nav__inner {

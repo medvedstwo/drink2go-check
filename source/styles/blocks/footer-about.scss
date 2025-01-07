@@ -1,6 +1,14 @@
 .footer-about {
   width: $wrapper-mobile;
   padding: 20px;
+
+  @media (min-width: $vp-tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $vp-desktop) {
+    grid-column: 1/-1;
+  }
 }
 
 .footer-about__description {
