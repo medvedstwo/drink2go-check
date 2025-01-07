@@ -8,7 +8,7 @@ const initRangeBar = () => {
     connect: true,
     range: {
       'min': 0,
-      'max': 1000
+      'max': 1050
     },
     cssPrefix: 'range__element-'
   });

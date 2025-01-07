@@ -23,7 +23,38 @@
     "scaleToSameSize": true
   },
   "onReadyScript": "onReady.js",
-  "scenarios": [],
+  "scenarios": [
+    {
+      "label": "index hero TEST-05. Шрифты.",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": [
+        "Новинка!",
+        "Декаф Флэт Уайт",
+        "Свежесваренный кофе без кофеина",
+        "225₽",
+        "295₽",
+        "Заказать"
+      ],
+      "onReadyScript": "textStylesOnly.js",
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index features TEST-05. Шрифты.",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": [
+        "Преимущества",
+        "Главные причины",
+        "Скорость",
+        "Готовый напиток всегда"
+      ],
+      "onReadyScript": "textStylesOnly.js",
+      "misMatchThreshold": 5
+    }
+  ],
   "fileNameTemplate": "{configId}_{scenarioLabel}_{selectorIndex}_{viewportLabel}",
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference/test-05",

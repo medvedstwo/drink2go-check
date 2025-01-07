@@ -20,8 +20,8 @@
 }
 
 .slider__button-icon {
-  width: 11px;
-  height: 20px;
+  width: 20px;
+  height: 11px;
 
   svg {
     width: 100%;
@@ -80,14 +80,16 @@
 
 .slider__description {
   @include flex(center, center, column);
-  gap: 10px;
+  gap: 7px;
 
   @media (min-width: $vp-tablet) {
     gap: 0;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $vp-desktop) {
     align-items: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -110,7 +112,7 @@
 }
 
 .slider__description-text {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
 
   br {
     display: none;

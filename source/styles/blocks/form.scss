@@ -18,11 +18,27 @@
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
+
+  &--is-milk {
+    margin-bottom: 18px;
+  }
+
+  &--country {
+    margin-bottom: 20px;
+  }
 }
 
 .form__inner {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
+
+  &--milk {
+    margin-bottom: 30px;
+  }
+
+  &--country {
+    margin-bottom: 30px;
+  }
 }
 
 .form__list {
