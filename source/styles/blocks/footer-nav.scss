@@ -6,12 +6,13 @@
   }
 
   @media (min-width: $vp-tablet) {
-    padding-left: 18px;
+    padding-left: 20px;
   }
 
   @media (min-width: $vp-desktop) {
     grid-template-columns: 317px 318px 317px;
     padding-top: 9px;
+    padding-left: 18px;
   }
 }
 
