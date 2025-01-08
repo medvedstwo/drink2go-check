@@ -53,6 +53,29 @@
       ],
       "onReadyScript": "textStylesOnly.js",
       "misMatchThreshold": 5
+    },
+    {
+      "label": "index catalog TEST-05. Шрифты.",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": [
+        "Каталог кофейных напитков",
+        "Цена",
+        "Наличие молока",
+        "Неважно",
+        "Страна произрастания",
+        "Бразилия",
+        "Эфиопия",
+        "Перу",
+        "Применить",
+        "Сбросить",
+        "Сортировка",
+        "Кофе без кофеина из Эфиопии",
+        "В корзину"
+      ],
+      "onReadyScript": "textStylesOnly.js",
+      "misMatchThreshold": 5
     }
   ],
   "fileNameTemplate": "{configId}_{scenarioLabel}_{selectorIndex}_{viewportLabel}",

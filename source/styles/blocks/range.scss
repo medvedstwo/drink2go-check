@@ -5,6 +5,14 @@
 .range__element {
   margin-left: 8px;
   margin-bottom: 22px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 14px;
+  }
 }
 
 .range__inner {

@@ -9,12 +9,19 @@
 }
 
 .select__title {
+  font-family: $font-primary-semibold;
   font-size: 16px;
   line-height: 24px;
-  margin: 0;
+  font-weight: 600;
+  margin: 0 0 0 3px;
+
+  @media (min-width: $vp-tablet) {
+    padding-right: 11px;
+  }
 }
 
 .select__select {
+  position: relative;
   font-family: $font-primary-semibold;
   font-size: 16px;
   line-height: 24px;
@@ -22,8 +29,17 @@
   color: $color-primary;
   text-transform: lowercase;
   padding: 4px 0 4px 10px;
-  max-width: 165px;
+  width: 165px;
   background-color: transparent;
+  background-image: url("../../icons/down.svg");
+  background-position: right 10px center;
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
   border: none;
+  appearance: none;
+
+  @media (min-width: $vp-tablet) {
+    // padding: 4px 0 4px 6px;
+  }
 }
 

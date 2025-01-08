@@ -2,7 +2,7 @@
   @include flex(center, center, column);
 
   @media (min-width: $vp-tablet) {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   @media (min-width: $vp-desktop) {
@@ -19,6 +19,7 @@
 
   @media (min-width: $vp-tablet) {
     width: $wrapper-tablet;
+    margin-left: 14px;
   }
 
   @media (min-width: $vp-desktop) {
@@ -43,7 +44,7 @@
   }
 
   @media (min-width: $vp-tablet) {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     &::after {
       content: none;

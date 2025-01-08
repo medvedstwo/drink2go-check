@@ -6,6 +6,10 @@
   @media (min-width: $vp-tablet) {
     padding: 80px 20px 90px;
   }
+
+  @media (min-width: $vp-desktop) {
+    padding: 101px 20px 120px 25px;
+  }
 }
 
 .catalog__wrapper {
@@ -36,5 +40,6 @@
   @media (min-width: $vp-desktop) {
     text-align: center;
     grid-column: 1/-1;
+    margin-bottom: 40px;
   }
 }
