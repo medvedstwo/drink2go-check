@@ -15,8 +15,8 @@
   width: 20px;
 
   &--prev {
-    &:hover(:not(:disabled)),
-    &:focus(:not(:disabled)) {
+    &:hover,
+    &:focus {
       background-image: linear-gradient(90deg, $color-white 0%, rgba(255, 255, 255, 0) 100%);
       outline: none;
     }
@@ -33,9 +33,10 @@
   }
 
   &--next {
-    &:hover(:not(:disabled)),
-    &:focus(:not(:disabled)) {
+    &:hover,
+    &:focus {
       background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, $color-white 100%);
+      outline: none;
     }
 
     &:active {

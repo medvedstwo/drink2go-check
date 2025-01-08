@@ -27,6 +27,16 @@
     display: none;
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $vp-tablet) {
     margin-left: 8px;
   }

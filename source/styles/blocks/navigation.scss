@@ -164,8 +164,24 @@
     display: none;
   }
 
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-secondary;
+  }
+
   @media (min-width: $vp-tablet) {
     padding: 32px 20px;
+
+    &:active {
+      svg {
+        fill: $color-primary;
+      }
+    }
   }
 
   @media (min-width: $vp-desktop) {
