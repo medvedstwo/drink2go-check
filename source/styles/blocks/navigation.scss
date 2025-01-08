@@ -39,6 +39,10 @@
   @media (min-width: $vp-tablet) {
     @include flex(flex-start, center, row);
   }
+
+  @media (min-width: $vp-desktop) {
+    gap: 23px;
+  }
 }
 
 .navigation__item {

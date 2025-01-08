@@ -5,12 +5,13 @@
 
   @media (min-width: $vp-tablet) {
     padding: 0;
+    margin-left: 10px;
     width: $wrapper-tablet;
   }
 
   @media (min-width: $vp-desktop) {
     width: $wrapper-desktop;
-    padding: 0 40px;
+    margin-left: 40px;
   }
 }
 
